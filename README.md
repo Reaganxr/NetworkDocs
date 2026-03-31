@@ -16,6 +16,11 @@
 ## 1. Overview
 This document describes the design and implementation of a home network built using Cisco Packet Tracer. The network simulates a real-world residential setup, including internet connectivity, internal device communication, and basic security and NAT configurations.
 
+<p align="center">
+  <img src="PTTopology.png" width="600">
+</p>
+<p align="center"><em>Figure: Topology of Home Network</em></p>
+
 ## 2. Physical Topology
 
 The physical network consists of the following components:
