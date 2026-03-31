@@ -1,9 +1,8 @@
 # Home Network Documentation
 
-### Version: V1.0
+### Author: Gen Li
 ### Organization: MITT
 ### Address: 130 Henlow Bay, Winnipeg, MB R3Y 1G4
-### Contact: (204)989-6500
 
 ## Document Information
 
