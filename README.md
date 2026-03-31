@@ -2,7 +2,8 @@
 
 ### Author: Gen Li
 ### Organization: MITT
-### Address: 130 Henlow Bay, Winnipeg, MB R3Y 1G4
+### Project: Lesson 5: Create Your Network Docs
+### Instructor: Jibing Liang
 
 ## Document Information
 
