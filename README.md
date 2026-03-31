@@ -14,7 +14,7 @@
 
 
 ## 1. Overview
-This document describes the design and implementation of a home network built using Cisco Packet Tracer. The network simulates a real-world residential setup, including internet connectivity, internal device communication, and basic security and NAT configurations.
+This document describes the design and implementation of a home network built using Cisco Packet Tracer. The network simulates a real-world residential setup, including internet connectivity, internal device communication, and basic security, NAT, and access control configurations.
 
 <p align="center">
   <img src="PTTopology.png" width="600">
@@ -63,7 +63,7 @@ Internet traffic flows as follows:
 
 PC/Server → Switch → Home Router → ISP Router → Internet
 
-All outbound traffic is routed through the Home Router using NAT.
+All outbound traffic is routed through the Home Router using NAT (PAT).
 
 ### Routing:
 - Default Route: 0.0.0.0/0 → 209.0.0.1
@@ -86,6 +86,7 @@ All outbound traffic is routed through the Home Router using NAT.
 - NAT (PAT + Static NAT)
 - Default Gateway
 - Internet routing
+- Access Control (ACL)
 
 ### File Server:
 - Internal file storage
@@ -108,12 +109,26 @@ All outbound traffic is routed through the Home Router using NAT.
 #### Static NAT:
 - 192.168.1.10 → 209.0.0.10
 
+### ACL Configuration:
+
+An extended Access Control List (ACL) is configured on the Home Router to control internal access to the File Server.
+
+- PC1 (Gaming Room) is **denied** access to the File Server
+- PC2 (Office Room) is **allowed** access to the File Server
+
+Example logic:
+
+- deny traffic from PC1 to File Server (192.168.1.10)
+- permit all other traffic
+
+The ACL is applied inbound on the LAN interface of the Home Router.
+
 ## 7. Security Considerations
 
 Basic network security is implemented through:
 
 - NAT to hide internal IP addresses
-- Controlled access to internal server
+- Access Control List (ACL) to restrict unauthorized access to the server
 - Separation between internal LAN and external network
 
 No direct inbound access is allowed except through static NAT mapping.
@@ -132,5 +147,3 @@ Credentials are stored securely using:
 - Advanced firewall rules
 - Network monitoring tools (e.g., Wireshark)
 - Wireless network expansion
-
----
