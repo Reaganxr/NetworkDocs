@@ -1,9 +1,9 @@
 # Home Network Documentation
 
 ### Author: Gen Li
-### Organization: MITT, 130 Henlow Bay, Winnipeg, MB R3Y 1G4
 ### Project: Lesson 5: Create Your Network Docs
 ### Instructor: Jibing Liang
+### Organization: MITT, 130 Henlow Bay, Winnipeg, MB R3Y 1G4
 
 ## Document Information
 
