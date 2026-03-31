@@ -5,6 +5,14 @@
 ### Address: 130 Henlow Bay, Winnipeg, MB R3Y 1G4
 ### Contact: (204)989-6500
 
+## Document Information
+
+| Version | Date       | Description                | Author |
+|--------|------------|----------------------------|--------|
+| 1.0    | 2026-03-31 | Initial Network Documentation | Gen Li |
+
+
+
 ## 1. Overview
 This document describes the design and implementation of a home network built using Cisco Packet Tracer. The network simulates a real-world residential setup, including internet connectivity, internal device communication, and basic security and NAT configurations.
 
