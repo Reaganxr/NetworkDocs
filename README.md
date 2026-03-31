@@ -21,6 +21,8 @@ This document describes the design and implementation of a home network built us
 </p>
 <p align="center"><em>Figure: Topology of Home Network</em></p>
 
+Download the project file here: [Download Home Network Topology](./Lesson4lab.pkt)
+
 ## 2. Physical Topology
 
 The physical network consists of the following components:
