@@ -8,8 +8,6 @@
 ## 1. Overview
 This document describes the design and implementation of a home network built using Cisco Packet Tracer. The network simulates a real-world residential setup, including internet connectivity, internal device communication, and basic security and NAT configurations.
 
----
-
 ## 2. Physical Topology
 
 The physical network consists of the following components:
@@ -33,8 +31,6 @@ The physical network consists of the following components:
 
 All wired connections use Ethernet cables.
 
----
-
 ## 3. Logical Topology
 
 ### WAN Network:
@@ -57,8 +53,6 @@ All outbound traffic is routed through the Home Router using NAT.
 ### Routing:
 - Default Route: 0.0.0.0/0 → 209.0.0.1
 
----
-
 ## 4. IP Addressing Scheme
 
 | Device        | Interface | IP Address      | Method  |
@@ -69,8 +63,6 @@ All outbound traffic is routed through the Home Router using NAT.
 | File Server   | Fa0      | 192.168.1.10    | Static  |
 | PC1           | Fa0      | DHCP            | Dynamic |
 | PC2           | Fa0      | DHCP            | Dynamic |
-
----
 
 ## 5. Network Services
 
@@ -83,8 +75,6 @@ All outbound traffic is routed through the Home Router using NAT.
 ### File Server:
 - Internal file storage
 - SMB-based file sharing service
-
----
 
 ## 6. Device Configurations
 
@@ -103,8 +93,6 @@ All outbound traffic is routed through the Home Router using NAT.
 #### Static NAT:
 - 192.168.1.10 → 209.0.0.10
 
----
-
 ## 7. Security Considerations
 
 Basic network security is implemented through:
@@ -115,8 +103,6 @@ Basic network security is implemented through:
 
 No direct inbound access is allowed except through static NAT mapping.
 
----
-
 ## 8. Credential Security
 
 Credentials are stored securely using:
@@ -124,8 +110,6 @@ Credentials are stored securely using:
 - Password manager (e.g., Bitwarden)
 - Strong passwords (minimum 12 characters)
 - No credentials stored in plain text
-
----
 
 ## 9. Future Improvements
 
